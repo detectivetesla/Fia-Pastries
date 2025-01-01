@@ -1,0 +1,349 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Featured Product Section */
+  .featured-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #83adb7;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Ellipse Design */
+.ellipse {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.outer-ellipse {
+    width: 380px;
+    height: 380px;
+    background-color: rgba(136, 208, 208, 0.2); /* Light, larger ellipse */
+    z-index: 1;
+}
+
+.inner-ellipse {
+    width: 320px;
+    height: 320px;
+    background-color: rgba(74, 105, 112, 1); /* Dark, smaller ellipse */
+    z-index: 2;
+}
+  
+  .featured-product .info {
+    flex: 1;
+  }
+  
+  .featured-product h2 {
+    font-size: 4rem; /* Large text */
+    font-weight: 900;
+    color: #d3edf1;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .featured-product p {
+    font-size: 1.2rem;
+    color: #d3edf1;
+    margin: 0;
+  }
+  
+  .featured-product .price {
+    position: absolute;
+    bottom: 20px;
+    left: 1px;
+    font-size: 3rem; /* Large, prominent font */
+    font-weight: bold;
+    color: #d3edf1;
+    z-index: 3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    
+  }
+  
+  .featured-product .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .featured-product img {
+    max-width: 150px;
+    border-radius: 8px;
+  }
+  
+  /* Popular Products Section */
+  .popular-products {
+    margin-top: 40px;
+  }
+  
+  .popular-products h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    opacity:80%;
+    font-weight: 900;
+    color: #d3edf1;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .product-backgrounds {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .product {
+    flex: 1;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  #chocolate {
+    background-color: #5a3b2e;
+    color: #fff;
+  }
+  
+  #wheat {
+    background-color: #d9d7be;
+    color: #333;
+  }
+  
+  #banana {
+    background-color: #ffeb3b;
+    color: #333;
+  }
+  
+  .product p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Order Form Section */
+  .order-form {  
+    margin-top: 50px;  
+    text-align: center;  
+  }  
+  
+  .order-form h2 {  
+    font-size: 1.8rem;  
+    margin-bottom: 20px;  
+  }  
+  
+  form {  
+    margin-top: 20px;  
+  }  
+  
+  .input-group {  
+    display: flex;  
+    justify-content: space-between;  
+    gap: 30px; /* Even spacing between boxes */  
+    margin-bottom: 20px;  
+  }  
+  
+  input, textarea {  
+    background-color: #2a2a2a;  
+    border: none;  
+    border-radius: 15px;  
+    padding: 15px 20px;  
+    color: #ffffff;  
+    font-size: 1rem;  
+  }  
+  
+  input {  
+    width: 48%; /* Ensures consistent width */  
+  }  
+  
+  textarea {  
+    width: 100%;  
+    height: 120px;  
+    resize: none;  
+    margin-bottom: 20px;  
+  }  
+  
+  button {  
+    background-color: #ffcc00;  
+    border: none;  
+    border-radius: 15px;  
+    padding: 15px 20px;  
+    color: #000;  
+    font-size: 1.2rem;  
+    font-weight: bold;  
+    cursor: pointer;  
+    width: 100%;  
+  }  
+  
+  .see-products {  
+    margin-top: 20px;  
+    color: #ffcc00;  
+    font-size: 1rem;  
+    text-decoration: none;  
+  }  
+  
+  .see-products:hover {  
+    color: #e6b800;  
+  }
+
+ /* Footer Container Styling */
+.footer {
+    background-color: #000; /* Black background for professional look */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Font family for consistency */
+    border-top: 1px solid #444; /* Subtle border at the top for separation */
+  }
+  
+  /* Footer Content Section Styling */
+  .footer-content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Space between sections */
+  }
+  
+  /* Logo Styling */
+  .footer-logo h1 {
+    font-size: 1.5rem; /* Font size for logo */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold font for emphasis */
+  }
+  
+  .footer-logo span {
+    color: #fff; /* Same color for span */
+  }
+  
+  /* Links Section Styling */
+  .footer-links {
+    font-size: 0.9rem; /* Slightly smaller text size */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 10px; /* Space between links */
+  }
+  
+  /* Link Styling */
+  .footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text */
+  }
+  
+  .footer-links a:hover {
+    color: #ccc; /* Light gray text on hover */
+  }
+  
+ /* Social Media Icons Section */
+.footer-socials {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px;
+  }
+  
+  /* Social Media Icon Styling */
+  .footer-socials a {
+    width: 40px; /* Circle diameter */
+    height: 40px; /* Circle diameter */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    border-radius: 50%; /* Make it a circle */
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White icon color */
+    font-size: 1.5rem; /* Adjust icon size */
+    transition: transform 0.3s ease; /* Hover effect */
+  }
+  
+  /* Facebook Icon */
+  .footer-socials a.facebook {
+    background-color: #4267B2; /* Facebook blue */
+  }
+  
+  .footer-socials a.facebook:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+  }
+  
+  /* Twitter Icon */
+  .footer-socials a.twitter {
+    background-color: #1DA1F2; /* Twitter blue */
+  }
+  
+  .footer-socials a.twitter:hover {
+    transform: scale(1.1);
+  }
+  
+  /* WhatsApp Icon */
+  .footer-socials a.whatsapp {
+    background-color: #25D366; /* WhatsApp green */
+  }
+  
+  .footer-socials a.whatsapp:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Instagram Icon */
+  .footer-socials a.instagram {
+    background: radial-gradient(circle at 30% 30%, #F58529, #DD2A7B, #8134AF, #515BD4); /* Instagram gradient */
+  }
+  
+  .footer-socials a.instagram:hover {
+    transform: scale(1.1);
+  }
+  
+  /* General Icon Alignment */
+  .footer-socials a img {
+    width: 20px; /* Icon inside the circle */
+    height: 20px;
+  }
