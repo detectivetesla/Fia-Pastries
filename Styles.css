@@ -5,6 +5,9 @@ body {
     padding: 0;
     background-color: #000000;
     color: #fff;
+     width: 100%;
+     max-width: 99vw;
+     padding: 10px; /* Added padding for better content spacing */
   }
   
   .container {
@@ -12,7 +15,68 @@ body {
     margin: 0 auto;
     padding: 20px;
   }
-  
+
+/* Navbar */
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  flex-wrap: wrap; /* Enables wrapping for small screens */
+}
+.logo{
+   font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  flex-shrink: 0; /* Prevents the logo from shrinking */}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* Makes navigation items wrap on smaller screens */
+}
+.navbar li {
+  margin-left: 20px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a.active {
+  color: #fbc02d;
+  font-weight: bold;
+}
+
+/* Add hover effect for interactivity */
+.navbar a:hover {
+  color: #fbc02d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .navbar a {
+    font-size: 18px; /* Increased font size for better readability */
+  }
+
+
   /* Header Section */
   header {
     display: flex;
