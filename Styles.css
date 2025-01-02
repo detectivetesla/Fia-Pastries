@@ -58,25 +58,6 @@ body {
   color: #fbc02d;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-  }
-  .navbar li {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-  .navbar a {
-    font-size: 18px; /* Increased font size for better readability */
-  }
-
-
   /* Header Section */
   header {
     display: flex;
