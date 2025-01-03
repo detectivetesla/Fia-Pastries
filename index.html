@@ -22,77 +22,107 @@
     </header>
 
     <!-- Featured Product -->
-    <section class="featured-product">
-      <div class="info">
+   <section>
+    <section class="featured-product-1">
+      <div class="info-1">
         <h2>Vanilla Chin Chin</h2>
         <p>Experience the rich, aromatic crunch of our Vanilla Chin Chin – a sweet treat made to delight every bite!</p>
         <p class="price">GH₵10.00</p>
       </div>
       <div class="image">
-        <img src="Images/Vanilla Chin Chin Flavour.png" alt="Vanilla Chin Chin">
-      </div>
+        <img src="Images2\Vanilla Flavour.jpg" alt="Vanilla Chin Chin">
+      </div></section>
+
+
+      <section class="featured-product-2">
+        <div class="info-2">
+          <h2>Chocolate Chin Chin</h2>
+          <p>Indulge in the perfect balance of sweetness and cocoa in every crunchy bite of our Chocolate Chin Chin</p>
+          <p class="price">GH₵10.00</p>
+        </div>
+        <div class="image">
+          <img src="Images2\Chocolate Flavour.jpg" alt="Chocolate Chin Chin">
+        </div></section>
+
+        <section class="featured-product-3">
+          <div class="info-3">
+            <h2>Wheat Chin Chin</h2>
+            <p>A nutritious twist on the classic treat, our Wheat Chin Chin offers a wholesome crunch that’s simply irresistible.</p>
+            <p class="price">GH₵10.00</p>
+          </div>
+          <div class="image">
+            <img src="Images2\Chocolate Flavour.jpg" alt="Wheat Chin Chin">
+          </div></section>
+  
+
+          <section class="featured-product-4">
+            <div class="info-4">
+              <h2>Banana Chin Chin</h2>
+              <p>Savor the fruity flavor and satisfying crunch of our Banana Chin Chin, a fun twist on a beloved classic snack!</p>
+              <p class="price">GH₵10.00</p>
+            </div>
+            <div class="image">
+              <img src="Images2\Chocolate Flavour.jpg" alt="Banana Chin Chin">
+            </div></section>
+    
+
     </section>
 
     <!-- Popular Products -->
-<section class="popular-products">
-    <h2>OUR POPULAR PRODUCTS</h2>
-    <div class="product-backgrounds">
-      <div class="product" id="chocolate">
-        <p>Chocolate Chin Chin</p>
+    <div class="product-head"><h2>Our Products</h2></div>
+    <section class="featured-product-5">
+      <div class="info-5">
+        <p>Zero Additives</p> 
+        <p>Zero Preservatives</p> 
+        <p>All Natural Ingridients</p> 
+        <p>Freshly Prepared</p>
       </div>
-      <div class="product" id="wheat">
-        <p>Wheat Chin Chin</p>
-      </div>
-      <div class="product" id="banana">
-        <p>Banana Chin Chin</p>
-      </div>
-    </div>
-  </section>
+      <div class="image-5">
+        <img src="Images2/All_Chin_Chin-removebg-preview.png" alt="All Chin Chin">
+      </div></section>
   
  <!-- Order Form -->
-  <div>
- <section class="order-form">  
-    <h2>Fill this form for customized order</h2>  
-    <form>  
-      <!-- First row -->  
-      <div class="input-group">  
-        <input type="text" placeholder="Name *" required>  
-        <input type="email" placeholder="Email *" required>  
-      </div>  
-  
-      <!-- Second row -->  
-      <div class="input-group">  
-        <input type="text" placeholder="Phone *" required>  
-        <input type="text" placeholder="Address *" required>  
-      </div>  
-  
-      <!-- Product selection row -->  
-      <div class="input-group">  
-        <input type="text" placeholder="Vanilla Chin Chin">  
-        <input type="number" placeholder="Quantity (packs) *" required>  
-      </div>  
-      <div class="input-group">  
-        <input type="text" placeholder="Chocolate Chin Chin">  
-        <input type="number" placeholder="Quantity (packs) *" required>  
-      </div>  
-      <div class="input-group">  
-        <input type="text" placeholder="Wheat Chin Chin">  
-        <input type="number" placeholder="Quantity (packs) *" required>  
-      </div>  
-      <div class="input-group">  
-        <input type="text" placeholder="Banana Chin Chin">  
-        <input type="number" placeholder="Quantity (packs) *" required>  
-      </div>  
-  
-      <!-- Additional details -->  
-      <textarea placeholder="Further details"></textarea>  
-  
-      <!-- Submit button -->  
-      <button type="submit">Submit Request</button>  
-    </form>  
-    <a href="#" class="see-products">See All Products</a>  
-  </section>
-  </div>
+   <div class="form-title"><h2>Fill this form for customized order</h2></div>
+   <form>
+     <!-- Input for name -->
+     <label for="name">Name *</label>
+     <input type="text" id="name" name="name" placeholder="Name *" required >
+     
+     <!-- Input for email -->
+     <label for="email">Email *</label>
+     <input type="email" id="email" name="email" placeholder="Email *"  required >
+     
+     <!-- Input for phone number -->
+     <label for="phone">Phone *</label>
+     <input type="tel" id="phone" name="phone" required  p>
+     
+     <!-- Input for address -->
+     <label for="address">Address *</label>
+     <input type="text" id="address" name="address" placeholder="Address" required>
+     
+     <!-- Input for Vanilla Chin Chin quantity -->
+     <label for="vanilla">Vanilla Chin Chin</label>
+     <input type="number" id="vanilla" name="vanilla" placeholder="Quantity" min="0">
+     
+     <!-- Input for Chocolate Chin Chin quantity -->
+     <label for="chocolate">Chocolate Chin Chin</label>
+     <input type="number" id="chocolate" name="chocolate" placeholder="Quantity" min="0">
+     
+     <!-- Input for Wheat Chin Chin quantity -->
+     <label for="wheat">Wheat Chin Chin</label>
+     <input type="number" id="wheat" name="wheat" placeholder="Quantity" min="0">
+     
+     <!-- Input for Banana Chin Chin quantity -->
+     <label for="banana">Banana Chin Chin</label>
+     <input type="number" id="banana" name="banana" placeholder="Quantity" min="0">
+     
+     <!-- Textarea for further details -->
+     <label for="details">Further details</label>
+     <textarea id="details" name="details" rows="5" placeholder="Any additional requests or information"></textarea>
+     
+     <!-- Submit button -->
+     <button type="submit">Submit Request</button>
+   </form>
 
   <footer class="footer">
     <!-- Footer Main Section -->
