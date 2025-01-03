@@ -49,303 +49,518 @@ body {
     font-size: 1rem;
   }
   
-  /* Featured Product Section */
- .featured-product {
-    display: flex;
-    justify-content: space-between; /* Places content and image on opposite sides */
-    align-items: center;/* Vertically centers content */
-    margin: 50px auto;
-    background-color: #83adb7;
-    border-radius: 16px;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    padding: 5vw; /* Relative padding to the viewport width */
-    box-sizing: border-box;
-  }
-  
-  .featured-product .info {
-    flex: 1;
-    text-align: left; /* Align text to the left */
-  }
-  
-  .featured-product h2 {
-    font-size: 4rem; /* Large text */
-    font-weight: 900;
-    color: #d3edf1;
-    margin: 0 0 20px 0;
-    margin-left: -3vw;
-    margin-top: 2vw;
-    line-height: 1.2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    word-wrap: break-word; /* Wraps text if it exceeds the container width */
-  }
-  
-  .featured-product p {
-    font-size: 1.2rem;
-    color: #d3edf1;
-    margin: 0;
-    margin-left: -3vw;
-    margin-top: 2vw;
-  }
-  
-  .featured-product .price {
-    font-size: 3rem; /* Large, prominent font */
-    font-weight: bold;
-    color: #d3edf1;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px 20px;
-    border-radius: 8px;
-    width: 230px;;
-    margin-left: -3vw;
-    margin-top: 2vw;
-  }
-  
-  .featured-product .image {
-    flex: 1;
-    text-align: right;
-    width: 40%; /* Image takes up 40% of the width */
-    display: flex;
-    justify-content: center; /* Centers image horizontally */
-  }
-  
-  .featured-product img {
-    max-width: 150px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 300px; /* Limit image width */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image fits within the container */
-  }
-  
-  /* Popular Products Section */
-  .popular-products {
-    margin-top: 40px;
-  }
-  
-  .popular-products h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    opacity:80%;
-    font-weight: 900;
-    color: #d3edf1;
-    line-height: 1.2;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  }
-  
-  .product-backgrounds {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  
-  .product {
-    flex: 1;
-    height: 400px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  #chocolate {
-    background-color: #5a3b2e;
-    color: #fff;
-  }
-  
-  #wheat {
-    background-color: #d9d7be;
-    color: #333;
-  }
-  
-  #banana {
-    background-color: #ffeb3b;
-    color: #333;
-  }
-  
-  .product p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-  }
+ /* Featured Product Section */
+.featured-product-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #83adb7;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
 
-  /* Order Form Section */
-  .order-form {  
-    margin-top: 50px;  
-    text-align: center;  
-  }  
-  
-  .order-form h2 {  
-    font-size: 1.8rem;  
-    margin-bottom: 20px;  
-  }  
-  
-  form {  
-    margin-top: 20px;  
-  }  
-  
-  .input-group {  
-    display: flex;  
-    justify-content: space-between;  
-    gap: 30px; /* Even spacing between boxes */  
-    margin-bottom: 20px;  
-  }  
-  
-  input, textarea {  
-    background-color: #2a2a2a;  
-    border: none;  
-    border-radius: 15px;  
-    padding: 15px 20px;  
-    color: #ffffff;  
-    font-size: 1rem;  
-  }  
-  
-  input {  
-    width: 48%; /* Ensures consistent width */  
-  }  
-  
-  textarea {  
-    width: 100%;  
-    height: 120px;  
-    resize: none;  
-    margin-bottom: 20px;  
-  }  
-  
-  button {  
-    background-color: #ffcc00;  
-    border: none;  
-    border-radius: 15px;  
-    padding: 15px 20px;  
-    color: #000;  
-    font-size: 1.2rem;  
-    font-weight: bold;  
-    cursor: pointer;  
-    width: 100%;  
-  }  
-  
-  .see-products {  
-    margin-top: 20px;  
-    color: #ffcc00;  
-    font-size: 1rem;  
-    text-decoration: none;  
-  }  
-  
-  .see-products:hover {  
-    color: #e6b800;  
-  }
+.featured-product-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #d1c178;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
 
- /* Footer Container Styling */
+.featured-product-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #baf171;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-product-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #e7ff60;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Ellipse Design */
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.outer-ellipse {
+  width: 380px;
+  height: 380px;
+  background-color: rgba(136, 208, 208, 0.2); /* Light, larger ellipse */
+  z-index: 1;
+}
+
+.inner-ellipse {
+  width: 320px;
+  height: 320px;
+  background-color: rgba(74, 105, 112, 1); /* Dark, smaller ellipse */
+  z-index: 2;
+}
+
+.featured-product-1 .info-1 {
+  flex: 1;
+}
+
+.featured-product-2 .info-2 {
+  flex: 1;
+}
+
+.featured-product-3 .info-3 {
+  flex: 1;
+}
+
+.featured-product-4 .info-4 {
+  flex: 1;
+}
+
+.featured-product-1 h2 {
+  font-size: 4rem; /* Large text */
+  font-weight: 900;
+  color: #d3edf1;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.featured-product-2 h2 {
+  font-size: 4rem; /* Large text */
+  font-weight: 900;
+  color: #dabf75;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.featured-product-3 h2 {
+  font-size: 4rem; /* Large text */
+  font-weight: 900;
+  color: #cfe4ac;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.featured-product-4 h2 {
+  font-size: 4rem; /* Large text */
+  font-weight: 900;
+  color: #d2da66;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.featured-product-1 p {
+  font-size: 1.2rem;
+  color: #d3edf1;
+  margin: 0;
+}
+
+.featured-product-2 p {
+  font-size: 1.2rem;
+  color: #d3edf1;
+  margin: 0;
+}
+
+.featured-product-3 p {
+  font-size: 1.2rem;
+  color:rgb(26, 45, 53);
+  margin: 0;
+}
+
+.featured-product-4 p {
+  font-size: 1.2rem;
+  color:#1b1d08;
+  margin: 0;
+}
+
+.featured-product-1 .price {
+  position: absolute;
+  bottom: 20px;
+  left: 1px;
+  font-size: 3rem; /* Large, prominent font */
+  font-weight: bold;
+  color: #d3edf1;
+  z-index: 3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  
+}
+
+.featured-product-2 .price {
+  position: absolute;
+  bottom: 20px;
+  left: 1px;
+  font-size: 3rem; /* Large, prominent font */
+  font-weight: bold;
+  color: #ece49c;
+  z-index: 3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  
+}
+
+
+.featured-product-3 .price {
+  position: absolute;
+  bottom: 20px;
+  left: 1px;
+  font-size: 3rem; /* Large, prominent font */
+  font-weight: bold;
+  color: #e6f5bd;
+  z-index: 3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  
+}
+
+
+.featured-product-4 .price {
+  position: absolute;
+  bottom: 20px;
+  left: 1px;
+  font-size: 3rem; /* Large, prominent font */
+  font-weight: bold;
+  color: #0e1111;
+  z-index: 3;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  
+}
+
+
+.featured-product-1 .image {
+  flex: 1;
+  text-align: right;
+}
+
+.featured-product-1 img {
+  width: 100%;
+  max-width: 30vw;
+  max-height: 80%;
+  height: 40vw;
+  border-radius: 8px;
+}
+
+
+.featured-product-2 .image {
+  flex: 1;
+  text-align: right;
+}
+
+.featured-product-2 img {
+  width: 100%;
+  max-width: 30vw;
+  max-height: 80%;
+  height: 40vw;
+  border-radius: 8px;
+}
+
+.featured-product-3 .image {
+  flex: 1;
+  text-align: right;
+}
+
+.featured-product-3 img {
+  width: 100%;
+  max-width: 30vw;
+  max-height: 80%;
+  height: 40vw;
+  border-radius: 8px;
+}
+
+.featured-product-4 .image {
+  flex: 1;
+  text-align: right;
+}
+
+.featured-product-4 img {
+  width: 100%;
+  max-width: 30vw;
+  max-height: 80%;
+  height: 40vw;
+  border-radius: 8px;
+}
+
+/* Popular Products Section */
+.product-head{
+  font-size: 3rem; /* Large text */
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(83, 83, 83, 0.3); /* Subtle shadow */
+}
+
+.featured-product-5{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #e2ca79;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-product-5 .info-5 {
+  flex: 1;
+  font-size: 2rem; /* Large text */
+  font-weight: 900;
+  color: #d3edf1;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-align: left;
+  justify-content: space-between;
+  gap:500px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.featured-product-5 p {
+  font-size: 1.2rem;
+
+  margin: 0;
+  
+  flex: 1;
+  font-size: 2rem; /* Large text */
+  font-weight: 900;
+  color: #d3edf1;
+  margin: 0 0 20px 0;
+  text-align: left;
+  justify-content: space-between;
+  gap:5000px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+
+.featured-product-5 .image-5 {
+  flex: 1;
+  text-align: right;
+}
+
+.image-5{
+  position: relative;
+  right:50px;
+  top: -80px;
+  bottom:10px;
+  
+}
+
+.featured-product-5 img {
+  width: 100%;
+  max-width: 30vw;
+  max-height: 80%;
+  height: 40vw;
+  border-radius: 8px;
+
+}
+
+
+/* Order Form Section */
+
+/* Styles for the form container */
+.form-title{
+  text-align: center;
+  font-size: 2rem; /* Large text */
+}
+
+form {
+  max-width: 600px; /* Limit the form width */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding inside the form */
+  background-color: #111; /* Dark gray background for the form */
+  border-radius: 15px; /* Rounded corners for the form */
+  
+  font-family: Arial, sans-serif; /* Set a simple font */
+  background-color: #000; /* Black background for the page */
+  color: #fff; /* White text color */
+}
+
+/* Label styles */
+label {
+  display: block; /* Ensure labels appear on a new line */
+  margin-bottom: 5px; /* Add space below labels */
+  font-weight: bold; /* Make labels bold */
+}
+
+/* Styles for input fields, textareas, and buttons */
+input, textarea, button {
+  width: 100%; /* Make elements take the full width */
+  margin-bottom: 15px; /* Add spacing between elements */
+  padding: 10px; /* Add padding inside elements */
+  border: 1px solid #444; /* Add a border with a dark gray color */
+  border-radius: 20px; /* Rounded corners for inputs and textarea */
+  background-color: #222; /* Darker gray background */
+  color: #fff; /* White text color */
+}
+
+/* Styles for the submit button */
+button {
+  background-color: #ffcc00; /* Bright yellow background */
+  color: #000; /* Black text color for contrast */
+  font-weight: bold; /* Make the button text bold */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 25px; /* More rounded corners for the button */
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #ffb700; /* Slightly darker yellow on hover */
+}
+ 
+
+/* Footer Container Styling */
 .footer {
-    background-color: #000; /* Black background for professional look */
-    color: #fff; /* White text for contrast */
-    padding: 20px; /* Padding around the footer */
-    text-align: center; /* Center align text */
-    font-family: Arial, sans-serif; /* Font family for consistency */
-    border-top: 1px solid #444; /* Subtle border at the top for separation */
-  }
-  
-  /* Footer Content Section Styling */
-  .footer-content {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    gap: 20px; /* Space between sections */
-  }
-  
-  /* Logo Styling */
-  .footer-logo h1 {
-    font-size: 1.5rem; /* Font size for logo */
-    color: #fff; /* White text color */
-    font-weight: bold; /* Bold font for emphasis */
-  }
-  
-  .footer-logo span {
-    color: #fff; /* Same color for span */
-  }
-  
-  /* Links Section Styling */
-  .footer-links {
-    font-size: 0.9rem; /* Slightly smaller text size */
-    display: flex; /* Flexbox for horizontal layout */
-    gap: 10px; /* Space between links */
-  }
-  
-  /* Link Styling */
-  .footer-links a {
-    text-decoration: none; /* Remove underline */
-    color: #fff; /* White text */
-  }
-  
-  .footer-links a:hover {
-    color: #ccc; /* Light gray text on hover */
-  }
-  
- /* Social Media Icons Section */
+  background-color: #000; /* Black background for professional look */
+  color: #fff; /* White text for contrast */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Center align text */
+  font-family: Arial, sans-serif; /* Font family for consistency */
+  border-top: 1px solid #444; /* Subtle border at the top for separation */
+}
+
+/* Footer Content Section Styling */
+.footer-content {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  gap: 20px; /* Space between sections */
+}
+
+/* Logo Styling */
+.footer-logo h1 {
+  font-size: 1.5rem; /* Font size for logo */
+  color: #fff; /* White text color */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+.footer-logo span {
+  color: #fff; /* Same color for span */
+}
+
+/* Links Section Styling */
+.footer-links {
+  font-size: 0.9rem; /* Slightly smaller text size */
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 10px; /* Space between links */
+}
+
+/* Link Styling */
+.footer-links a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text */
+}
+
+.footer-links a:hover {
+  color: #ccc; /* Light gray text on hover */
+}
+
+/* Social Media Icons Section */
 .footer-socials {
-    display: flex; /* Flexbox for horizontal layout */
-    gap: 15px; /* Space between icons */
-    justify-content: center; /* Center the icons */
-    margin-top: 20px;
-  }
-  
-  /* Social Media Icon Styling */
-  .footer-socials a {
-    width: 40px; /* Circle diameter */
-    height: 40px; /* Circle diameter */
-    display: flex; /* Flexbox for centering content */
-    justify-content: center; /* Center the logo horizontally */
-    align-items: center; /* Center the logo vertically */
-    border-radius: 50%; /* Make it a circle */
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* White icon color */
-    font-size: 1.5rem; /* Adjust icon size */
-    transition: transform 0.3s ease; /* Hover effect */
-  }
-  
-  /* Facebook Icon */
-  .footer-socials a.facebook {
-    background-color: #4267B2; /* Facebook blue */
-  }
-  
-  .footer-socials a.facebook:hover {
-    transform: scale(1.1); /* Enlarge slightly on hover */
-  }
-  
-  /* Twitter Icon */
-  .footer-socials a.twitter {
-    background-color: #1DA1F2; /* Twitter blue */
-  }
-  
-  .footer-socials a.twitter:hover {
-    transform: scale(1.1);
-  }
-  
-  /* WhatsApp Icon */
-  .footer-socials a.whatsapp {
-    background-color: #25D366; /* WhatsApp green */
-  }
-  
-  .footer-socials a.whatsapp:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Instagram Icon */
-  .footer-socials a.instagram {
-    background: radial-gradient(circle at 30% 30%, #F58529, #DD2A7B, #8134AF, #515BD4); /* Instagram gradient */
-  }
-  
-  .footer-socials a.instagram:hover {
-    transform: scale(1.1);
-  }
-  
-  /* General Icon Alignment */
-  .footer-socials a img {
-    width: 20px; /* Icon inside the circle */
-    height: 20px;
-  }
+  display: flex; /* Flexbox for horizontal layout */
+  gap: 15px; /* Space between icons */
+  justify-content: center; /* Center the icons */
+  margin-top: 20px;
+}
+
+/* Social Media Icon Styling */
+.footer-socials a {
+  width: 40px; /* Circle diameter */
+  height: 40px; /* Circle diameter */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+  border-radius: 50%; /* Make it a circle */
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* White icon color */
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: transform 0.3s ease; /* Hover effect */
+}
+
+/* Facebook Icon */
+.footer-socials a.facebook {
+  background-color: #4267B2; /* Facebook blue */
+}
+
+.footer-socials a.facebook:hover {
+  transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+/* Twitter Icon */
+.footer-socials a.twitter {
+  background-color: #1DA1F2; /* Twitter blue */
+}
+
+.footer-socials a.twitter:hover {
+  transform: scale(1.1);
+}
+
+/* WhatsApp Icon */
+.footer-socials a.whatsapp {
+  background-color: #25D366; /* WhatsApp green */
+}
+
+.footer-socials a.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* Instagram Icon */
+.footer-socials a.instagram {
+  background: radial-gradient(circle at 30% 30%, #F58529, #DD2A7B, #8134AF, #515BD4); /* Instagram gradient */
+}
+
+.footer-socials a.instagram:hover {
+  transform: scale(1.1);
+}
+
+/* General Icon Alignment */
+.footer-socials a img {
+  width: 20px; /* Icon inside the circle */
+  height: 20px;
+}
