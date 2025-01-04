@@ -205,13 +205,6 @@ body {
 
 }
 
-
-/* Mobile view for phones (480px and smaller) */
-@media (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* 1 column for phones */}
-}
-
 /* Hover effect for boxes */
 .menu-card-vanilla:hover {
   background-color:  #56c3d1; /* Slightly darker green on hover */
