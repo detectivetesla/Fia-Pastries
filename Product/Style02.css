@@ -92,187 +92,230 @@ body {
   color: #ccc;
 }
 
-.menu-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.menu-items  {
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* Two columns of equal width */
+  grid-gap: 30px; /* 20% gap between boxes */
+  width: 90%; /* Container width (adjust as needed) */
+  max-width: 100vw; /* Optional: Limit maximum width */
+  align-items:center ;
+  padding: 20px;
 }
 
-.menu-card-vanilla {
+.menu-card-vanilla  {
   background-color: #56c3d1;
-  padding: 15px;
-  border-radius: 8px;
-  width: 220px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;;
+
 }
 
 .menu-card-chocolate {
   background-color: #d1a056;
-  padding: 15px;
-  border-radius: 8px;
-  width: 220px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+ 
 }
 
 
 .menu-card-wheat {
   background-color:  #bfd156;
-  padding: 15px;
-  border-radius: 8px;
-  width: 220px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  
 }
 
 
 .menu-card-banana {
   background-color:#f8f52f;
-  opacity: 50px;
-  padding: 15px;
-  border-radius: 8px;
-  width: 220px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
 }
 
 
 .menu-vanilla-font {
-  width: 100%;
-  border-radius: 8px;
-
-  height: 500px;
-  text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 20px;
-  opacity:100%;
-  font-weight: 900;
   color: #d3edf1;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+  padding: 20px;
   line-height: 1.2;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .menu-chocolate-font {
-  width: 100%;
-  border-radius: 8px;
-
-  height: 500px;
-  text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 20px;
-  opacity:100%;
+  color:#dabf75;
   font-weight: 900;
-  color: #d3edf1;
+  margin: 0 0 20px 0;
+  padding: 20px;
   line-height: 1.2;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .menu-wheat-font {
-  width: 100%;
-  border-radius: 8px;
-
-  height: 500px;
-  text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 20px;
-  opacity:100%;
+  color: #cfe4ac;
   font-weight: 900;
-  color: #d3edf1;
+  margin: 0 0 20px 0;
+  padding: 20px;
   line-height: 1.2;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .menu-banana-font {
-  width: 100%;
-  border-radius: 8px;
-
-  height: 500px;
-  text-align: center;
   font-size: 1.8rem;
-  margin-bottom: 20px;
-  opacity:100%;
+  color: #dfe689;
   font-weight: 900;
-  color: #d3edf1;
+  padding: 20px;
+  margin: 0 0 20px 0;
   line-height: 1.2;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  
 }
 
 .description-1{
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: #d3edf1;
   margin: 0;
-  font-weight: 900;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
 }
 .description-2{
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: #d3edf1;
   margin: 0;
-  font-weight: 900;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
 }
 .description-3{
-  font-size: 1.2rem;
-  color: #d3edf1;
+   font-size: 2.5rem;
+  color:rgb(26, 45, 53);
   margin: 0;
-  font-weight: 900;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+ 
 }
 
 .description-4{
-  font-size: 1.2rem;
-  color: #ffffff;
+  font-size: 2.5rem;
+  color:#1b1d08;
   margin: 0;
-  font-weight: 900;
-  z-index: 3;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+
 }
 
 .price {
-  margin-top: 10px;
-  color: #1f1d1d;
-  font-size: 18px;
+  font-size: 3rem; /* Large, prominent font */
   font-weight: bold;
+  color: #0e1111;
+  padding: 10px 20px;
+
 }
 
-.order-form-section {
-  padding: 40px 20px;
-  background-color: #000;
+
+/* Mobile view for phones (480px and smaller) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column for phones */}
+}
+
+/* Hover effect for boxes */
+.menu-card-vanilla:hover {
+  background-color:  #56c3d1; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+.menu-card-chocolate:hover {
+  background-color: #d1a056; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+.menu-card-wheat:hover {
+  background-color: #bfd156; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+.menu-card-banana:hover {
+  background-color: #f8f52f; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+.menu-image{
+margin: 0;
+padding: 0;
+}
+
+/* Container */
+.order-container {
+  width: 90%;
   text-align: center;
+  background-color: #000;
+  align-items: center;
 }
 
-.order-form-section h2 {
-  font-size: 36px;
+h1 {
+  color: #ffcc00; /* Yellow title */
+  font-size: 2rem;
   margin-bottom: 20px;
-  color: #fbc02d;
 }
 
+/* Form */
 .order-form {
-  max-width: 600px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .order-form input,
-.order-form textarea,
-.order-form select,
-.order-form button {
+.order-form textarea {
+  width: 100%;
   padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: none;
-  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.order-form textarea {
+  resize: vertical;
+  min-height: 60px;
 }
 
 .order-form button {
-  background-color: #fbc02d;
-  color: #000;
-  font-weight: bold;
+  background-color: #ffcc00; /* Yellow button */
+  color: #000; /* Black text */
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
+
+.order-form button:hover {
+  background-color: #e6b800; /* Darker yellow on hover */
+}
+
+/* Flavors Section */
+.flavor-section {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.flavor {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  margin-bottom: 15px;
+}
+
+.flavor label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.flavor input[type="number"] {
+  width: 100%;}
+
+.flavor input[type="checkbox"] {
+  margin-bottom: 5px; /* Space between checkbox and quantity */
+}
+
 /* Footer Container Styling */
 .footer {
   background-color: #000; /* Black background for professional look */
