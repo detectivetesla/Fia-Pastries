@@ -84,7 +84,10 @@
   
  <!-- Order Form -->
    <div class="form-title"><h2>Fill this form for customized order</h2></div>
-   <form action="handle-order.php" method="POST">
+   <form action="https://api.web3forms.com/submit" method="POST">
+
+     <input type="hidden" name="access_key" value="782817bd-c39d-41b3-a241-a168b016e5ef">
+     
      <!-- Input for name -->
      <label for="name">Name *</label>
      <input type="text" id="name" name="name" placeholder="Name *" required >
